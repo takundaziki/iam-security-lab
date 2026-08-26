@@ -1,4 +1,4 @@
-# IAM Security Lab — Active Directory & Entra ID
+# IAM Security Lab: Active Directory & Entra ID
 
 A hands-on identity and access management lab simulating a small enterprise. Built to practise the full identity lifecycle: provisioning, access review, remediation, and deprovisioning and to document the reasoning behind each control, not just the configuration.
 
