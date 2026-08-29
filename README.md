@@ -46,6 +46,7 @@ The environment was seeded with realistic misconfigurations, then assessed.
 
 
 **Before remediation:**
+
 ![Access review - 24 findings](screenshots/access-review-before.png)
 
 **After remediation**
@@ -79,7 +80,7 @@ Finding 2 was deliberately not remediated. Revoking rights from a service accoun
 
 Both were caught by reading the output rather than trusting it.
 
-![Offboarding audit record](screenshots/offboarding-record.png)
+![Offboarding audit record](screenshots/off-boarding-record.png)
 
 ---
 
