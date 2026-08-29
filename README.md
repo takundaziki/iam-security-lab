@@ -44,6 +44,15 @@ The environment was seeded with realistic misconfigurations, then assessed.
 | 5 | Medium | User retained access to two departments after an internal move | Redundant group removed |
 | 6 | Medium | Contractor held `VPN-Access` | Offboarded |
 
+
+**Before remediation:**
+![Access review - 24 findings](screenshots/access-review-before.png)
+
+**After remediation**
+
+![Access review - 17 findings](screenshots/access-review-after.png)
+
+
 **Total findings: 24 → 17 after remediation.**
 
 Finding 2 was deliberately not remediated. Revoking rights from a service account without knowing its dependencies risks breaking production processes the correct action is to identify an owner and map dependencies first, not to remove access immediately.
@@ -58,6 +67,8 @@ Finding 2 was deliberately not remediated. Revoking rights from a service accoun
 | Complexity | Enabled | Acceptable |
 | History | 24 | Acceptable |
 
+![Password policy](screenshots/password-policy.png)
+
 ---
 
 ## What went wrong
@@ -67,6 +78,8 @@ Finding 2 was deliberately not remediated. Revoking rights from a service accoun
 **The offboarding script logged an action it never performed.** The audit record claimed `Domain Users` had been removed when the script explicitly excludes it. The stamp reused the pre-change membership list rather than the list of groups actually removed. An audit trail that misrepresents what happened is worse than no audit trail. Fixed and re-tested.
 
 Both were caught by reading the output rather than trusting it.
+
+![Offboarding audit record](screenshots/offboarding-record.png)
 
 ---
 
