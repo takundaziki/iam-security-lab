@@ -34,7 +34,7 @@ Every severity rating in this project is my own assessment. I knew a Sales user 
 
 **Single domain controller.** No redundancy and no replication. A production environment requires at least two per site, and replication latency has direct consequences for the accuracy of any attribute-based review.
 
-**No hybrid synchronisation.** The on-premises and cloud directories in this lab are structurally parallel but not connected. Entra Connect would make this a genuine hybrid identity environment and introduce a category of problems this lab does not cover — sync conflicts, attribute mapping, and source-of-authority decisions.
+**No hybrid synchronisation.** The on-premises and cloud directories in this lab are structurally parallel but not connected. Entra Connect would make this a genuine hybrid identity environment and introduce a category of problems this lab does not cover sync conflicts, attribute mapping, and source-of-authority decisions.
 
 **Cloud scope constrained by licensing.** Conditional Access, dynamic group membership, Privileged Identity Management, Identity Protection, and Access Reviews all require Entra ID P1 or P2. The cloud portion of this lab was therefore limited to free-tier capabilities: user and group management, and Security Defaults.
 
